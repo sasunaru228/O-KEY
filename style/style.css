@@ -655,10 +655,35 @@ footer .footer__bg__middle .footer__bg__white {
   }
 
   .slider {
-    width: 80%;
+    width: 1920px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 1440px) {
+  html {
+    max-width: 1440px;
+    overflow-x: hidden;
+  }
+
+  .slider {
+    width: 1440px;
+  }
+  .slider .slide {
+    width: 1440px;
+  }
+  .slider .slide img {
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 420px) {
+  html {
+    max-width: 414px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 425px) {
   html {
     max-width: 425px;
     overflow-x: hidden;
@@ -801,24 +826,33 @@ footer .footer__bg__middle .footer__bg__white {
   .slider {
     width: 100%;
   }
+  .slider .slide {
+    width: 414px;
+  }
+  .slider .slide img {
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   .prev {
-    position: absolute;
-    left: 50px;
+    position: relative;
+    left: 30px;
     top: 240px;
     z-index: 2;
   }
 
   .next {
-    position: absolute;
+    position: relative;
     top: 240px;
-    right: 50px;
+    right: 30px;
   }
 
   .family {
     background: no-repeat top center url("../img/Mobile/background_middle400.png");
     background-size: 425px;
-    width: 425px;
+    width: 100%;
     background-position-y: 500px;
     position: relative;
     z-index: 2;
