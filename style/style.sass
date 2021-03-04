@@ -1,0 +1,1128 @@
+@font-face
+  font-family: "Amatic SC"
+  src : url("../fonts/AmaticSC/AmaticSC-Bold.ttf")
+@font-face
+  font-family: "Posterizer"
+  src : url("../fonts/Posterizer/Posterizer_KG_Sketch.otf")
+*
+  margin: 0
+  padding: 0
+  font-family: Circe, sans-serif
+.container
+  width: 100%
+  max-width: 1113px
+  margin: 0 auto
+header
+  background: no-repeat top center url("../img/header.png")
+  background-size: 2560px
+  height: 733px
+  .header__text
+    color: #ffffff
+    position: relative
+    left: 50%
+    top: 226px
+    width: 562px
+    height: 341px
+    p:nth-child(1)
+      font-style: normal
+      font-weight: bold
+      font-size: 37.5px
+      line-height: 45px
+    p:nth-child(2)
+      padding-top: 15px
+      font-style: normal
+      font-weight: bold
+      font-size: 37.5px
+      line-height: 45px
+    p:nth-child(3)
+      padding-top: 15px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 26px
+.main
+  background: #00B3C3
+.bonuses
+  .bonuses__top
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 30px
+    //height: 500px
+    p
+      font-style: normal
+      font-weight: bold
+      font-size: 70px
+      line-height: 92px
+      color: #ffffff
+      display: block
+      text-transform: uppercase
+    //p:nth-child(1)
+    //  position: absolute
+    //  top: 550px
+    //p:nth-child(2)
+    //  position: absolute
+    //  top: 600px
+  .bonuses__middle
+    margin-top: 57px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    span
+      background: #FFFFFF
+      border-radius: 40px
+      width: 45%
+      padding: 20px 0
+      text-align: center
+      a
+        font-style: normal
+        font-weight: bold
+        font-size: 26px
+        line-height: 23px
+        color: #83B120
+        text-decoration: none
+  .bonuses__items
+    margin-top: 50px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+  .bonuses__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 50px
+    span
+      background: url("../img/bottom_bonuses.png")
+      height: 117px
+      width: 553px
+    p
+      margin-top: 20px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 23px
+      color: #FFFFFF
+.slider
+  width: 1920px
+  height: 500px
+  background: #9D9595
+  margin: 100px auto
+.family
+  background: no-repeat top center url("../img/background_middle.png")
+  background-position-y: -700px
+  position: relative
+  z-index: 2
+  height: 4368px
+  .container
+    .trees
+      a:nth-child(1)
+        top: 125px
+      a:nth-child(2)
+        top: 135px
+        left: 195px
+      a:nth-child(3)
+        top: 195px
+        left: 435px
+      a
+        position: relative
+        display: inline-block
+        text-align: center
+        text-decoration: none
+        font-family: Amatic SC, sans-serif
+        color: #ffffff
+        font-style: normal
+        font-weight: bold
+        font-size: 70px
+        line-height: 74px
+    .miniHeader
+      margin-top: 830px
+      p
+        font-style: normal
+        font-weight: bold
+        font-size: 70px
+        line-height: 80px
+        color: #ffffff
+    .grid-container
+      margin-top: 110px
+      display: grid
+      grid-template-columns: 360px 360px 360px
+      grid-template-rows: 314px 314px 314px
+      gap: 20px 20px
+      div
+        color: #FFFFFF
+        position: relative
+        .more
+          position: absolute
+          left: 15px
+          bottom: 20px
+          font-style: normal
+          font-weight: 300
+          font-size: 20px
+          line-height: 25px
+          transition: 0.2s color
+          svg
+            height: 27px
+            width: 14px
+            margin-left: 8px
+            transform: translateY(8px)
+            path
+              transition: 0.4s fill
+        &:hover .more
+          color: #FB9292
+        &:hover .more > svg > path
+          fill: #FB9292
+      .box4
+        background: no-repeat url("../img/box4.png")
+        grid-area: 2 / 1 / 4 / 2
+        p
+          position: absolute
+          left: 15px
+          bottom: 63px
+          font-style: normal
+          font-weight: bold
+          font-size: 32px
+          line-height: 35px
+      .box1
+        grid-area: 1 / 1 / 2 / 2
+        background: no-repeat url("../img/box1.png")
+        p
+          position: absolute
+          left: 15px
+          bottom: 54px
+          font-style: normal
+          font-weight: bold
+          font-size: 32px
+          line-height: 32px
+      .box2
+        p
+          position: absolute
+          left: 15px
+          bottom: 55px
+          font-style: normal
+          font-weight: bold
+          font-size: 32px
+          line-height: 35px
+        grid-area: 1 / 2 / 2 / 3
+        background: url("../img/box2.png")
+      .box3
+        grid-area: 1 / 3 / 2 / 4
+        background: url("../img/box3.png")
+        p
+          position: absolute
+          left: 15px
+          bottom: 56px
+          font-style: normal
+          font-weight: bold
+          font-size: 32px
+          line-height: 32px
+      .box5
+        background: #568114
+        display: flex
+        flex-direction: row
+        align-items: center
+        grid-area: 2 / 2 / 3 / 4
+        p:nth-child(1)
+          margin-left: 30px
+          margin-top: 30px
+          font-style: normal
+          font-weight: bold
+          font-size: 250px
+          line-height: 100px
+        p:nth-child(2)
+          margin-left: 30px
+          font-style: normal
+          font-weight: bold
+          font-size: 90px
+          line-height: 100px
+      .box6
+        grid-area: 3 / 2 / 4 / 3
+        background: #1C571E
+        p:nth-child(1)
+          text-transform: uppercase
+          position: absolute
+          left: 15px
+          bottom: 100px
+          font-style: normal
+          font-weight: normal
+          font-size: 32px
+          line-height: 35px
+        p:nth-child(2)
+          font-style: normal
+          font-weight: normal
+          font-size: 26px
+          line-height: 22px
+          position: absolute
+          left: 15px
+          bottom: 25px
+      .box7
+        background: url("../img/box7.png")
+        grid-area: 3 / 3 / 4 / 4
+        p
+          position: absolute
+          left: 15px
+          bottom: 56px
+          font-style: normal
+          font-weight: bold
+          font-size: 32px
+          line-height: 35px
+.tingle-modal-box
+  width: auto
+  margin-bottom: 50px
+  &__content
+    padding: 0
+.box__modal
+  width: 360px
+  height: auto
+  .logo
+    position: relative
+    top: 184px
+    left: 15px
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 35px
+    color: #FFFFFF
+  .content
+    padding: 45px 25px
+    margin-top: 210px
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    line-height: 30px
+  &__1
+    background: no-repeat url("../img/box1.png")
+  &__2
+    background: no-repeat url("../img/box2.png")
+    .logo
+      top: 260px
+    .content
+      margin-top: 270px
+  &__3
+    background: no-repeat url("../img/box3.png")
+    .logo
+      top: 220px
+    .content
+      margin-top: 245px
+  &__4
+    background: no-repeat url("../img/box4.png")
+    .logo
+      top: 515px
+    .content
+      margin-top: 540px
+  &__7
+    background: no-repeat url("../img/box7.png")
+    .logo
+      top: 219px
+    .content
+      margin-top: 250px
+.prev
+  position: absolute
+  left: 250px
+  top: 240px
+  z-index: 2
+.next
+  position: absolute
+  top: 240px
+  right: 250px
+.table
+  display: grid
+  grid-template-columns: 270px 270px 270px 270px
+  grid-template-rows: 350px 350px 350px
+  gap: 30px 15px
+  margin-top: 180px
+  div
+    position: relative
+    .number
+      position: absolute
+      bottom: 65px
+      left: 10px
+    .description
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      position: absolute
+      left: 70px
+      top: 230px
+    .logo
+      position: absolute
+      bottom: 141px
+    p
+      color: #FFFFFF
+      width: 160px  /////
+    .description
+      margin-left: 15px
+  .table0
+    grid-area: 1 / 1 / 2 / 3
+    p
+      display: inline-block
+    p:nth-child(1)
+      padding-top: 100px
+      font-weight: 800
+      font-size: 235px
+      line-height: 100px
+      letter-spacing: -0.05em
+    p:nth-child(2)
+      width: 200px
+      margin-left: 60px
+      font-weight: 800
+      font-size: 44px
+      line-height: 65px
+      text-transform: uppercase
+    p:nth-child(3)
+      width: 600px
+      margin-left: 10px
+      font-weight: bold
+      font-size: 32px
+      line-height: 37px
+      letter-spacing: -0.02em
+  .table1
+    grid-area: 1 / 3 / 2 / 4
+    .logo
+      left: 80px
+      bottom: 161px
+  .table2
+    grid-area: 1 / 4 / 2 / 5
+    .logo
+      left: 55px
+      bottom: 151px
+  .table3
+    grid-area: 2 / 1 / 3 / 2
+    .logo
+      left: 30px
+      bottom: 151px
+  .table4
+    grid-area: 2 / 2 / 3 / 3
+    .logo
+      left: 90px
+      bottom: 166px
+  .table5
+    grid-area: 2 / 3 / 3 / 4
+    .logo
+      left: 60px
+  .table6
+    grid-area: 2 / 4 / 3 / 5
+    .logo
+      left: 90px
+      bottom: 166px
+  .table7
+    grid-area: 3 / 1 / 4 / 2
+    .logo
+      left: 90px
+      bottom: 166px
+  .table8
+    grid-area: 3 / 2 / 4 / 3
+    .logo
+      left: 60px
+  .table9
+    grid-area: 3 / 3 / 4 / 4
+    .logo
+      left: 80px
+  .table10
+    grid-area: 3 / 4 / 4 / 5
+    .logo
+      left: 20px
+.delicious
+  z-index: -100
+  transform: translateY(-630px)
+  background: no-repeat top center url("../img/delicious.png")
+  height: 1648px
+html
+  height: 9000px
+footer
+  height: 0
+  .footer__bg__top
+    transform: translateY(-1200px)
+    background: no-repeat top center url("../img/footer__bg__top.png")
+    height: 1000px
+    width: 2558px
+  .footer__bg__middle
+    height: 2400px
+    transform: translateY(-1950px)
+    background: #6DB300
+    img
+      margin: auto
+    .footer__heading
+      margin-left: 50px
+      margin-top: 50px
+      font-family: Posterizer, sans-serif
+      font-size: 105px
+      line-height: 110px
+      color: #FFFFFF
+    .footer__bg__white
+      background: url('../img/footer__bg__white.png')
+      position: absolute
+      z-index: -1
+      height: 1239px
+      width: 2559px
+.recipes
+  margin-top: 90px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  div
+    width: 330px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-left: 40px
+    margin-bottom: 70px
+    p
+      margin-top: 25px
+      font-weight: bold
+      font-size: 26px
+      line-height: 30px
+    span
+      margin-top: 10px
+      color: #FFFFFF
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      background: #83B120
+      border-radius: 7px
+      padding: 4px 18px
+.recipes__footer
+  img
+    padding-left: 40px
+    float: left
+  p
+    float: left
+    padding-left: 40px
+    padding-top: 40px
+    font-style: normal
+    font-weight: 400
+    font-size: 34px
+    line-height: 41px
+    a
+      color: #83B120
+.footer__bg__bottom
+  background: no-repeat center bottom url("../img/footer__bg__bottom.png")
+  background-size: 2559px
+  width: 2560px
+  height: 520px
+  position: absolute
+  bottom: 0
+  left: 0
+.egor
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: absolute
+  bottom: 300px
+  background-color: aquamarine
+  width: 1113px
+  height: 363px
+  p
+    font-style: normal
+    font-weight: bold
+    font-size: 39px
+    line-height: 46px
+    color: #FFFFFF
+
+@media screen and (max-width: 1920px)
+  html
+    max-width: 1920px
+    overflow-x: hidden
+  .slider
+    width: 80%
+@media screen and (max-width: 426px)
+  html
+    max-width: 425px
+    overflow-x: hidden
+  .container
+    width: 100%
+    max-width: 425px
+    margin: 0 0
+    display: flex
+    flex-direction: column
+    align-items: center
+  header
+    z-index: 2
+    background: no-repeat top center url("../img/Mobile/headerMobile.png")
+    background-size: 425px
+    position: relative
+    .header__text
+      color: #ffffff
+      position: absolute
+      left: 60px
+      top: 300px
+      p:nth-child(1)
+        font-style: normal
+        font-weight: bold
+        font-size: 22px
+        line-height: 20px
+      p:nth-child(2)
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+      p:nth-child(3)
+        margin-right: 0!important
+        width: 320px
+        font-style: normal
+        font-weight: bold
+        font-size: 15px
+        line-height: 16px
+  .main
+    z-index: -2
+    transform: translateY(-220px)
+  .bonuses
+    .bonuses__top
+      display: flex
+      flex-direction: column
+      align-items: center
+      height: 600px
+      img
+        position: absolute
+        top: 200px
+        left: 30px
+      span
+        p
+          font-style: normal
+          font-weight: bold
+          font-size: 34px
+          line-height: 40px
+          color: #ffffff
+          display: block
+          text-transform: uppercase
+        p:nth-child(1)
+          position: absolute
+          top: 550px
+          left: 30px
+        p:nth-child(2)
+          position: absolute
+          top: 600px
+          left: 30px
+    .bonuses__middle
+      margin-top: 57px
+      display: flex
+      flex-direction: column
+      align-items: center
+      span:nth-child(2)
+        margin-top: 25px
+      span
+        background: #FFFFFF
+        border-radius: 40px
+        width: 70%
+        padding: 13px 30px
+        text-align: center
+        a
+          font-style: normal
+          font-weight: bold
+          font-size: 18px
+          line-height: 23px
+          color: #83B120
+          text-decoration: none
+    .bonuses__items
+      margin-top: 50px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      img
+        margin-top: 15px
+    .bonuses__bottom
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 50px
+      //padding: 0 30px
+      span
+        margin: auto
+        background: no-repeat url("../img/Mobile/bottob_bonuses400.png")
+        height: 109px
+        width: 275px
+      p
+        width: 325px
+        margin-top: 20px
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 15px
+  .slider
+    width: 100%
+  .prev
+    position: absolute
+    left: 50px
+    top: 240px
+    z-index: 2
+  .next
+    position: absolute
+    top: 240px
+    right: 50px
+
+
+
+
+  .family
+    background: no-repeat top center url("../img/Mobile/background_middle400.png")
+    background-size: 425px
+    width: 425px
+    background-position-y: +500px
+    position: relative
+    z-index: 2
+    height: 3566px
+    .container
+      .trees
+        a:nth-child(1)
+          top: 20px
+          left: -10px
+        a:nth-child(2)
+          top: 90px
+          left: 75px
+        a:nth-child(3)
+          top: 210px
+          left: -160px
+        a
+          position: relative
+          display: inline-block
+          text-align: center
+          text-decoration: none
+          font-family: Amatic SC, sans-serif
+          color: #ffffff
+          font-style: normal
+          font-weight: bold
+          font-size: 32px
+          line-height: 35px
+      .miniHeader
+        margin-top: 700px
+        p
+          margin-left: 10px
+          font-style: normal
+          font-weight: bold
+          font-size: 30px
+          line-height: 35px
+          color: #ffffff
+      .grid-container
+        margin: 80px auto 0 auto
+        display: grid
+        grid-template-columns: 164px 164px
+        grid-template-rows: 143px 143px 143px 143px
+        gap: 10px 10px
+        div
+          color: #FFFFFF
+          position: relative
+          .more
+            position: absolute
+            left: 10px
+            bottom: 4px
+            font-size: 14px
+            line-height: 25px
+            svg
+              height: 15.76px
+              width: 8px
+              margin-left: 4px
+              transform: translateY(+4px)
+        .box4
+          background: no-repeat url("../img/box4.png")
+          background-size: cover
+          grid-area: 2 / 1 / 4 / 2
+          p
+            position: absolute
+            left: 10px
+            bottom: 40px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 18px
+        .box1
+          grid-area: 1 / 1 / 2 / 2
+          background: no-repeat url("../img/box1.png")
+          background-size: cover
+          p
+            position: absolute
+            left: 10px
+            bottom: 34px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 18px
+        .box2
+          p
+            position: absolute
+            left: 10px
+            bottom: 30px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 22px
+          grid-area: 1 / 2 / 2 / 3
+          background: url("../img/box2.png")
+          background-size: cover
+        .box3
+          grid-area: 2 / 2 / 3 / 3
+          background: url("../img/box3.png")
+          background-size: cover
+          p
+            position: absolute
+            width: 100px
+            left: 10px
+            bottom: 34px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 18px
+        .box5
+          background: #568114
+          display: flex
+          flex-direction: column
+          align-items: start
+          grid-area: 3 / 2 / 4 / 3
+          p:nth-child(1)
+            margin-left: 18px
+            margin-top: 10px
+            font-style: normal
+            font-weight: bold
+            font-size: 80px
+            line-height: 70px!important
+          p:nth-child(2)
+            margin-left: 23px
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+        .box6
+          grid-area: 4 / 1 / 5 / 2
+          background: #1C571E
+          p:nth-child(1)
+            text-transform: uppercase
+            position: absolute
+            left: 10px
+            bottom: 54px
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 20px
+          p:nth-child(2)
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 14px
+            position: absolute
+            left: 10px
+            bottom: 10px
+        .box7
+          background: url("../img/box7.png")
+          background-size: cover
+          grid-area: 4 / 2 / 5 / 3
+          p
+            position: absolute
+            left: 10px
+            bottom: 30px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 18px
+  .table
+    display: grid
+    grid-template-columns: 175px 175px
+    grid-template-rows: 150px 190px 190px 190px 190px 190px
+    gap: 10px 10px
+    margin-top: 130px
+    div
+      position: relative
+      .number
+        width: 28px
+        height: 28px
+        position: absolute
+        bottom: 35px
+        left: 5px
+      .description
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        position: absolute
+        left: 25px
+        top: 130px
+        width: 130px
+        margin-left: 15px
+        color: #FFFFFF
+      .logo
+        position: absolute
+        bottom: 141px
+    .table0
+      grid-area: 1 / 1 / 2 / 3
+      p
+        display: inline-block
+      p:nth-child(1)
+        width: 50px
+        padding-top: 0
+        font-weight: 800
+        font-size: 90px
+        line-height: 100px
+        letter-spacing: -0.05em
+      p:nth-child(2)
+        width: 150px
+        margin-left: 40px
+        font-weight: 800
+        font-size: 20px
+        line-height: 25px
+        text-transform: uppercase
+      p:nth-child(3)
+        width: 220px
+        margin-left: 10px
+        font-weight: bold
+        font-size: 18px
+        line-height: 16px
+        letter-spacing: -0.02em
+    .table1
+      grid-area: 2 / 1 / 3 / 2
+      .logo
+        width: 50px
+        height: 51px
+        left: 60px
+        bottom: 100px
+    .table2
+      grid-area: 2 / 2 / 3 / 3
+      .logo
+        width: 87px
+        height: 66px
+        left: 40px
+        bottom: 90px
+    .table3
+      grid-area: 3 / 1 / 4 / 2
+      .logo
+        width: 105px
+        height: 109px
+        left: 30px
+        bottom: 80px
+    .table4
+      grid-area: 3 / 2 / 4 / 3
+      .logo
+        width: 68px
+        height: 54px
+        left: 50px
+        bottom: 90px
+    .table5
+      grid-area: 4 / 1 / 5 / 2
+      .logo
+        width: 80px
+        height: 119px
+        left: 50px
+        bottom: 60px
+    .table6
+      grid-area: 4 / 2 / 5 / 3
+      .logo
+        width: 51px
+        height: 70px
+        left: 60px
+        bottom: 100px
+    .table7
+      grid-area: 5 / 1 / 6 / 2
+      .logo
+        width: 50px
+        height: 63px
+        left: 60px
+        bottom: 90px
+    .table8
+      grid-area: 5 / 2 / 6 / 3
+      .logo
+        width: 97px
+        height: 86px
+        left: 35px
+        bottom: 80px
+    .table9
+      grid-area: 6 / 1 / 7 / 2
+      .logo
+        width: 80px
+        height: 66px
+        left: 50px
+        bottom: 90px
+    .table10
+      grid-area: 6 / 2 / 7 / 3
+      .logo
+        width: 126px
+        height: 104px
+        left: 20px
+        bottom: 80px
+
+
+
+
+  .tingle-modal-box
+    width: auto
+    margin-bottom: 50px
+    &__content
+      padding: 0
+  .box__modal
+    width: 400px
+    height: auto
+    margin: auto
+    .logo
+      position: relative
+      top: 184px
+      left: 15px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 35px
+      color: #FFFFFF
+    .content
+      padding: 45px 25px
+      margin-top: 210px
+      font-style: normal
+      font-weight: normal
+      font-size: 22px
+      line-height: 30px
+    &__1
+      background: no-repeat url("../img/box1.png")
+      background-size: 400px
+    &__2
+      background: no-repeat url("../img/box2.png")
+      background-size: 400px
+      .logo
+        top: 260px
+      .content
+        margin-top: 270px
+    &__3
+      background: no-repeat url("../img/box3.png")
+      background-size: 400px
+      .logo
+        top: 220px
+      .content
+        margin-top: 245px
+    &__4
+      background: no-repeat url("../img/box4.png")
+      background-size: 400px
+      .logo
+        top: 515px
+      .content
+        margin-top: 540px
+    &__7
+      background: no-repeat url("../img/box7.png")
+      background-size: 400px
+      .logo
+        top: 219px
+      .content
+        margin-top: 250px
+  .delicious
+    margin: 0
+    z-index: -10
+    transform: translateY(-210px)
+    background: no-repeat url("../img/Mobile/delicious.png")
+    background-size: 425px
+    height: 583px
+    width: 425px
+  footer
+    margin-top: 1300px
+    height: 0
+    .footer__bg__top
+      transform: translateY(-1900px)
+      background: no-repeat top center url("../img/Mobile/footer__bg__top400.png")
+      background-size: 425px
+      height: 162px
+      width: 425px
+    .footer__bg__middle
+      height: 3400px
+      transform: translateY(-1950px)
+      //background: #6DB300
+      .heading__img
+        text-align: center
+        span
+          display: block
+          background: url("../img/Mobile/footer__bg__middle400.png")
+          width: 366px
+          height: 265px
+      img
+        margin: auto
+      .footer__heading
+        font-family: Posterizer, sans-serif
+        font-size: 61px
+        line-height: 65px
+        color: #FFFFFF
+      .footer__bg__white
+        background: no-repeat url('../img/Mobile/footer__bg__white400.png')
+        background-size: 425px
+        height: 2400px
+        background-position-y: 40px
+        position: absolute
+        z-index: 15
+        width: 425px
+  .recipes
+    margin-top: 90px
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 16
+    div
+      width: 330px
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 50px
+      margin-left: 0
+      img
+        width: 266px
+        height: 187px
+      p
+        margin-top: 15px
+        font-weight: bold
+        font-size: 20px
+        line-height: 30px
+      span
+        margin-top: 5px
+        color: #FFFFFF
+        font-style: normal
+        font-weight: normal
+        font-size: 17px
+        background: #83B120
+        border-radius: 7px
+        padding: 0 18px
+    .recipe1
+      margin-top: 50px
+  .recipes__footer
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 16
+    img
+      width: 182px
+      height: 134px
+      padding-left: 0
+      float: none
+    p
+      text-align: center
+      width: 300px
+      float: none
+      padding-left: 0
+      padding-top: 40px
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 20px
+      a
+        color: #83B120
+  .footer__bg__bottom
+    background: url("../img/Mobile/footer__bg__bottom400.png")
+    background-size: 425px
+    height: 345px
+    position: absolute
+    bottom: 0
+    left: 0
+  .egor
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    bottom: 100px
+    background-color: aquamarine
+    width: 360px
+    height: 220px
+    p
+      font-style: normal
+      font-weight: bold
+      font-size: 22px
+      line-height: 46px
+      color: #FFFFFF
+
+
+
+
+
+
+
